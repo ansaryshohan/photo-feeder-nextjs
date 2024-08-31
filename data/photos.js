@@ -2,7 +2,7 @@ const photos = [
   {
     id: "94a7e01b-8576-4d18-8b84-6ae588db02d9",
     title: "The Beautiful Nature",
-    url: "https://source.unsplash.com/ztpUS4N1xhY",
+    url: "https://unsplash.com/photos/a-wood-burning-stove-in-a-living-room-D-KyoOIZtmM",
     tags: ["nature", "river", "ocean"],
     views: "10M",
     share: "4.56M",
