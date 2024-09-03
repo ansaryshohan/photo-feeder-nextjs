@@ -1,9 +1,11 @@
 import { getDictionary } from "@/app/[lang]/dictionaries";
 import Image from "next/image";
 
-const PhotoDetails = async ({ photoDetails, lang }) => {
+const PhotoDetails = async ({ lang, id }) => {
+  const response = await fetch(`${process.env.BASE_API_URL}/photos/${id}`);
+  const photoDetails = await response.json();
   const dictionary = await getDictionary(lang);
-  console.log(dictionary)
+  // console.log(dictionary)
   return (
     <div className="container my-4 lg:my-8">
       <div className="grid grid-cols-12 gap-4 2xl:gap-10 ">
